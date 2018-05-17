@@ -12,8 +12,35 @@ de un segundo, al volver hacer click debe volver a estar en blanco y negro.
   <head>
     <meta charset="utf-8">
     <title></title>
+
+<style>
+	
+.byw {
+    -webkit-filter: grayscale(100%);
+    -moz-filter:    grayscale(100%);
+    -ms-filter:     grayscale(100%);
+    -o-filter:      grayscale(100%);
+    filter: gray;
+    transition: 4s; 
+} 
+</style>
+
   </head>
   <body>
+
+<img src="https://imagizer.imageshack.us/v2/350x496q90/822/z7ds.jpg" class="byw" />
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<script>
+	
+	$("img").on("click", function(){
+		$("img").toggleClass("byw")
+	})
+	
+
+</script>
+
 
   </body>
 </html>
