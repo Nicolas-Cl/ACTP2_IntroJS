@@ -12,6 +12,24 @@ Tip: Investigar el evento window.onload
     <title></title>
   </head>
   <body>
+  	<img src="images/Auto1.jpg" alt="" class="img1">
+  	<img src="images/Auto2.jpg" alt="" class="img2">
+  	<img src="images/Auto3.jpg" alt="" class="img3">
+
+  	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  	<script>
+  		$(document).ready(function(){
+  			console.log("Dom Cargado")
+  			alert("Cargado")
+  		});
+
+  		$(window).ready(function(){
+  			console.log("Foto ready")
+  			alert("Foto Cargada")
+  		})
+
+  	</script>
+
 
   </body>
 </html>
